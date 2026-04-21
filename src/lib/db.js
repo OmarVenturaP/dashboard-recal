@@ -1,0 +1,21 @@
+// src/lib/db.js
+import { createPool } from 'mysql2/promise';
+
+const pool = createPool({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: process.env.DB_PORT,
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0,
+  timezone: '-06:00',
+  dateStrings: true,
+  ssl: process.env.DB_SSL_CA ? {
+    ca: process.env.DB_SSL_CA,
+    rejectUnauthorized: false
+  } : undefined
+});
+
+export default pool;
