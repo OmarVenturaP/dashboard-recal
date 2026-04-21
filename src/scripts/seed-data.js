@@ -72,7 +72,7 @@ async function seed() {
         );
     }
 
-    // Insertar un mes adicional para RECAL Corporativo (ID 1) para probar la mezcla de pendientes
+    // Insertar un mes adicional para RECAL (ID 1) para probar la mezcla de pendientes
     const jan2024Checklist = JSON.parse(JSON.stringify(SEGURIDAD_CHECKLIST));
     // En este mes, el punto 4 también está completado
     jan2024Checklist.find(p => p.id === 4).completed = true;

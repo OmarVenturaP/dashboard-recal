@@ -56,7 +56,7 @@ export default function Home() {
           <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-600/40">
             <ShieldCheck className="text-white w-6 h-6" />
           </div>
-          <span className="text-xl font-bold text-white tracking-tight">HSE RECAL</span>
+          <span className="text-xl font-bold text-white tracking-tight">Dashboard Dossier</span>
         </div>
         <Link 
           href="/login" 
@@ -277,11 +277,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6">
           <div className="bg-blue-900/10 border border-blue-500/20 p-4 rounded-2xl max-w-2xl text-center">
             <p className="text-xs text-blue-400 font-medium">
-              Este dashboard muestra información resumida de cumplimiento. Los detalles específicos están resguardados bajo políticas de confidencialidad de RECAL Corporativo.
+              Este dashboard muestra información resumida de cumplimiento. Los detalles específicos están resguardados bajo políticas de confidencialidad de la constructora.
             </p>
           </div>
           <div className="flex flex-col items-center gap-2 text-slate-500 text-sm">
-            <p>© 2026 hse_dossier_recal | Desarrollado por <a href="https://servitec-tonala.es" className="text-blue-500 hover:underline">SERVITEC</a></p>
+            <p>© 2026 Dashboard Dossier | Un producto de <a href="https://obras-os.vercel.app/" className="text-blue-500 hover:underline">Obras-OS</a> | Diseñado por <a href="https://servitec-tonala.es" className="text-blue-500 hover:underline font-medium">SERVITEC</a></p>
           </div>
         </div>
       </footer>

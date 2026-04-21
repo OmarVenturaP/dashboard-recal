@@ -60,7 +60,7 @@ export default function DashboardLayout({ children }) {
           <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-600/20">
             <ShieldCheck className="text-white w-6 h-6" />
           </div>
-          <span className="text-xl font-bold text-white tracking-tight">HSE RECAL</span>
+          <span className="text-xl font-bold text-white tracking-tight">Dashboard Dossier</span>
         </div>
 
         <nav className="mt-8 px-4 space-y-2">
@@ -108,8 +108,8 @@ export default function DashboardLayout({ children }) {
 
           <div className="flex items-center gap-4 ml-auto">
             <div className="text-right">
-              <p className="text-sm font-semibold text-white">Administrador RECAL</p>
-              <p className="text-xs text-slate-500 uppercase tracking-wider">Dashboard Corporativo</p>
+              <p className="text-sm font-semibold text-white">Admin</p>
+              <p className="text-xs text-slate-500 uppercase tracking-wider">Dashboard</p>
             </div>
             <div className="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-blue-400 font-bold">
               A
@@ -125,14 +125,11 @@ export default function DashboardLayout({ children }) {
         {/* Footer with Branding and Disclaimer */}
         <footer className="p-8 border-t border-slate-800 text-center space-y-4">
           <div className="bg-blue-900/10 border border-blue-800/30 p-4 rounded-2xl max-w-2xl mx-auto">
-            <p className="text-xs text-blue-400 font-medium">
-              DISCLAIMER: Este sistema es independiente a RECAL pero enfocado a la documentación requerida y estandarizada.
-            </p>
           </div>
           <div className="text-slate-500 text-sm">
-            <p>© 2026 hse_dossier_recal</p>
-            <p className="mt-1">
-              Desarrollado por{" "}
+            <p>© 2026 Dashboard dossier | Un producto de <a href="https://obras-os.vercel.app/" className="text-blue-500 hover:underline">Obras-OS</a></p>
+            <p className="mt-2">
+              Diseñado por{" "}
               <a 
                 href="https://servitec-tonala.es" 
                 target="_blank" 
@@ -142,6 +139,7 @@ export default function DashboardLayout({ children }) {
                 SERVITEC
               </a>
             </p>
+            <p className="text-[10px] text-slate-600 mt-2 italic">obras-os.com (Próximamente)</p>
           </div>
         </footer>
       </main>
